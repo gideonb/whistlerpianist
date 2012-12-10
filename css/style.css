@@ -4,6 +4,7 @@
  * With love, from @gideon_b
  */
 body {
+  margin: 0;
   font-family: "adobe-garamond-pro", "Adobe Garamond Pro", "Palatino Linotype", Palatino, Georgia, serif;
   background: #221f1f url(../img/texture.png);
   color: #fff;
