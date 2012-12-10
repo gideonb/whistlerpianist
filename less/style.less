@@ -1,0 +1,145 @@
+/*!
+ * Copyright 2012 Jaycelyn Brown
+ *
+ * With love, from @gideon_b
+ */
+ 
+ 
+ .font-smoothing (@smoothing: antialiased) {
+   font-smoothing: @arguments;
+   -moz-font-smoothing: @arguments;
+   -webkit-font-smoothing: @arguments;
+ }
+ 
+ .box-shadow (@x: 0, @y: 0, @blur: 10px, @color: #000) {
+   box-shadow: @arguments;
+   -moz-box-shadow: @arguments;
+   -webkit-box-shadow: @arguments;
+ }
+ 
+ 
+body {
+   font-family: "adobe-garamond-pro", "Adobe Garamond Pro", "Palatino Linotype", Palatino, Georgia, serif;
+   background: #221f1f url(../img/texture.png);
+   color: #fff;
+   .font-smoothing();
+ }
+
+
+ header{
+   width: 960px;
+   margin: -8px auto 0 auto;
+   height: 130px;
+   background: #fff;
+   color: #333;
+   .box-shadow();
+   h1{
+     float: left;
+     font-weight: 100;
+     font-size: 1.5em;
+     margin: 45px;
+   }
+   a{
+     float: right;
+     background: #cc6666;
+     padding: 10px;
+     font-size: 1em;
+     text-decoration: none;
+     color: #fff;
+     margin: 45px;
+     &:hover {
+       background: #c25b5b;
+     }
+   }
+ }
+ .headshot{
+   @headshot_width: 158px;
+   width: @headshot_width;
+   margin: -@headshot_width/2 auto 0 auto;
+ }
+ 
+ 
+.tagline{
+  width: 960px;
+  margin: 40px auto 0 auto;
+  font-size: 2.9em;
+  font-weight: 100;
+  text-align: center;
+  em{ color: #666;} 
+}
+
+  
+.video{
+  width: 900px;
+  margin: 40px auto 0 auto;
+  iframe{
+    border: 5px #555 solid;
+    .box-shadow();
+  }
+}
+
+.stripe{
+  background: #fff;
+  margin: 40px 0 80px 0;
+  height: 470px;
+}
+.about{
+  width: 960px;
+  margin: 0 auto 0 auto;
+  color: #333;
+  padding: 50px 0;
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  h2{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #8f8989;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .3em;
+    font-size: 1.3em;
+  }
+  .certifications{
+    text-align: right;
+  }
+  .cv{
+    margin-left: 75px;
+  }
+  ul{
+    list-style-type: none;
+    float: left;
+    li.title{
+      color: #724238;
+      font-size: .8em;
+      font-weight: bold;
+      line-height: .5em;
+      margin-bottom: 19px;
+    }
+    li{
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      line-height: 1.5em;
+      .what{}
+      .with{
+        font-size: .9em;
+        color: #ec7a64;
+        font-style: italic;
+        letter-spacing: .1em;
+      }
+      .when{
+        font-size: .9em;
+        letter-spacing: .3em;
+        text-transform: uppercase;
+        color: #8f8989;
+      }
+    }
+  }
+  
+  .stars{
+    margin-top:50px;
+    color: #ddd;
+    font-size: 2em;
+  }
+}
